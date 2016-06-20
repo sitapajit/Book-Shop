@@ -10,6 +10,7 @@ public class SignUpActivity extends AppCompatActivity {
     //Explicit ประกาศตัวแปร
     private EditText nameEditText,userEditText, passwordEditText;
     private String nameString,userString, passwordString;
+    private static final String urlPHP = "http://swiftcodingthai.com/neu/add_user_master.php";
 
 
 
@@ -42,6 +43,7 @@ public class SignUpActivity extends AppCompatActivity {
             myAlert.myDialog(this,"มีช่องว่าง","กรุณากรอกทุกช่องค่ะ");
         } else {
             //No Space
+            uploadToServer();
 
 
         }
@@ -49,6 +51,10 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }   //clickSign
+
+    private void uploadToServer() {
+
+    }
 
 
 }   //Main Class
